@@ -1,4 +1,4 @@
-# American Assocation for Clinical Chemistry
+# How to Truly "Excel" at Data Analysis and Visualization: An Introduction to the R Programming Language
 
 This introductory R workshop aims to teach participants with minimal programming experience the basics of the R statistical programming language for reproducible laboratory data analytics. R is a freely available programming environment that is aimed squarely at common activities in data analysis including complex data manipulation, statistical analysis, automation, and publication-quality data visualization. We will introduce basic concepts of R programming as well as more generalizable best practices in working with laboratory data. 
 
