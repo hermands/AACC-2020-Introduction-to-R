@@ -1,0 +1,78 @@
+---
+title: "Transform Data - b"
+---
+
+## Steps and the pipe
+
+```{r Steps and the pipe}
+# These 3 lines of code are an example of the how we would accomplish a multi-step analysis based on what we've learned so far. 
+day_10 <- filter(covid_testing, pan_day <= 10)
+day_10 <- select(day_10, clinic_name)
+day_10 <- arrange(day_10 , clinic_name)
+
+# vs
+
+# This code accomplishes the same task and is far more legible. 
+covid_testing %>% 
+  filter(pan_day <= 10) %>% 
+  select(clinic_name) %>% 
+  arrange(clinic_name)
+```
+
+## Your Turn 5
+
+Use `%>%` in the following chunk to write a sequence of functions that: 
+
+1. Filters to tests from the clinic (`clinic_name`) of "picu"
+
+2. Selects the column with the receive to verify turnaround time (`rec_ver_tat`) as well as the day from start of the pandemic (`pan_day`)
+
+3. Arrange the `pan_day` from highest to lowest so you can see most recent tests on top.
+
+Using <-, assign the result to a new variable, call it whatever you want.
+
+CHALLENGE: Use your mouse to select the name of the new data frame from the list of objects in the Environment tab in the upper-right pane of Rstudio. Answer the following questions:
+
+- Can you find the test that exceeded 10 hours in TAT?
+- What is the typical TAT for the PICU?
+- Given this data does it appear that there is a chronic problem in TAT for the PICU, or was this test an outlier?
+
+```{r Your Turn 5}
+covid_testing %>% 
+  filter(clinic_name=='picu') %>% #Here filter to the clinic with the name "picu"
+  select(pan_day,rec_ver_tat) %>% #Here select the columns you want to keep
+  arrange(desc(pan_day))    #Here arrange the pan_day column from highest to lowest (check slide 42 the arrange section of this file to use the desc() function)
+```
+
+
+
+## mutate
+
+```{r}
+# The following code creates a data frame with a new column called c_r_tat_mins which contains the collect to receive TAT quantified in minutes.
+covid_testing %>%
+	mutate(c_r_tat_mins = col_rec_tat*60)
+```
+
+## Your Turn 6
+Create a new column using the mutate() function that contains the total TAT. 
+Hint: The total TAT is the sum of `col_rec_tat` and `rec_ver_tat`
+
+```{r Your Turn 6}
+covid_testing %>% 
+  mutate(total_tat = col_rec_tat+rec_ver_tat)
+```
+
+
+## Replace a column with `mutate()`
+
+```{r}
+covid_testing %>%
+	mutate(mrn = as.character(mrn))
+```
+
+
+# Take aways
+
+* Connect operations with `%>%`  
+* Make new variables, with `mutate()`  
