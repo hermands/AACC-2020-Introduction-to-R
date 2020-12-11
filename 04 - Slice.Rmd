@@ -1,5 +1,5 @@
 ---
-title: "Transform Data - a"
+title: "Slice Data"
 ---
 
 ## Your Turn 1
@@ -53,7 +53,6 @@ In the `covid_testing` dataset the turnaround time metrics are labeled `col_rec_
 select(covid_testing, contains("rec"))
 select(covid_testing, col_rec_tat, rec_ver_tat)
 select(covid_testing, ends_with("tat"))
-#all of the above
 ```
 
 ## filter()
