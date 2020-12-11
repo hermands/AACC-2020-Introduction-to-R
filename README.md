@@ -36,13 +36,12 @@ There are multiple ways to access and interact with the course content, dependin
 2. After the workshop, the content will be available at our course github and can be downloaded from there as well.
 
 ## A note on the mechanics and etiquette of the virtual workshop
-Please note that this is first virtual R workshop that our team is hosting, we are preparing extensively to ensure that the workshop is productive for you, however some technical challenges are to be expected
 * Please refrain from screen grabbing other user's information, recording the workshop, or otherwise disrupting the flow of the Zoom Meeting.
-* Microphones will be muted during workshop main sessions but during breakout exercises you will be asked to collaboratively interact with your colleagues and an instructor. We encourage you to activate your video for the workshop. 
+* Microphones will be muted during workshop main sessions by default to facilitate the flow of the workshop.  Please feel free to enter questions in the chat.  Instructors will be monitoring the chat.  We encourage you to activate your video for the workshop.
  
 ## The day of the workshop
 
-The workshop is scheduled to begin at 830 AM Central Time. In order to make sure that we can begin on schedule please make every effort to log into the Zoom conference right at 830 to allow time to get settled, ensure your computer audio and video is set up, and get RStudio cloud up and running as a group.
+The workshop is scheduled to begin at 830 AM Central Standard Time. In order to make sure that we can begin on schedule please make every effort to log into the Zoom conference right at 830 to allow time to get settled, ensure your computer audio and video is set up, and get RStudio cloud up and running as a group.
 
 ## Acknowledgments
 
