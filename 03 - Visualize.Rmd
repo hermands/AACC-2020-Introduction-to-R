@@ -85,7 +85,7 @@ ggplot(data = covid_testing) +
 ```
 
 
-Now, with your group, try to figure out how you would modify the code above so it draws a frequency polygon instead of histogram. Hint: Google is your friend!
+Now try to figure out how you would modify the code above so it draws a frequency polygon instead of histogram. Hint: Google is your friend!
 
 ```{r}
 
